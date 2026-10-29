@@ -4,6 +4,8 @@ A grimdark, installable Pomodoro timer. No build step, no dependencies, no backe
 
 **Live app:** https://imademybones.github.io/Pomodoro/
 
+<img src="screenshots/app-screenshot.png" alt="Pomodoro of the Damned running in a browser, showing the ember progress ring and the preset rite cards" width="360" />
+
 ## Features
 
 - Five researched preset "rites" plus a fully custom timer
@@ -12,6 +14,7 @@ A grimdark, installable Pomodoro timer. No build step, no dependencies, no backe
 - Screen Wake Lock so the display won't sleep while a trial is running
 - Installable PWA (works offline once cached) — add to your phone's home screen
 - All state (last preset, custom minutes, sound/wake-lock toggles, trial tally) stays in `localStorage` on your device only
+- Theme-aware browser tab favicon — a warmer, higher-contrast variant automatically shows on dark-mode browsers so the icon doesn't vanish into dark tab bars
 
 ## The five rites
 

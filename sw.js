@@ -1,4 +1,4 @@
-const CACHE_NAME = "potd-cache-v1";
+const CACHE_NAME = "potd-cache-v2";
 const PRECACHE_URLS = [
   "./",
   "./index.html",
@@ -9,6 +9,10 @@ const PRECACHE_URLS = [
   "./icons/icon-512.png",
   "./icons/icon-maskable-512.png",
   "./icons/apple-touch-icon.png",
+  "./icons/favicon-32.png",
+  "./icons/favicon-32-dark.png",
+  "./icons/favicon-16.png",
+  "./icons/favicon.ico",
 ];
 
 self.addEventListener("install", (event) => {
