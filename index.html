@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+<title>Pomodoro of the Damned</title>
+<meta name="description" content="A grimdark Pomodoro timer. Choose a rite, endure the grind, claim your respite." />
+<meta name="theme-color" content="#0a0605" />
+<meta name="color-scheme" content="dark" />
+
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Pomodoro" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@500;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="vignette"></div>
+<div class="grain"></div>
+
+<main class="app" data-phase="work">
+
+  <header class="masthead">
+    <h1>Pomodoro <span>of the</span> Damned</h1>
+    <p class="tagline">Work is a rite. Rest is earned.</p>
+  </header>
+
+  <section class="timer-shrine" aria-live="polite">
+    <div class="phase-banner">
+      <span id="phaseLabel">The Grind</span>
+    </div>
+
+    <div class="ring-wrap">
+      <svg class="ring" viewBox="0 0 320 320" aria-hidden="true">
+        <circle class="ring-track" cx="160" cy="160" r="142"></circle>
+        <circle id="ringProgress" class="ring-progress" cx="160" cy="160" r="142"></circle>
+      </svg>
+      <div class="ring-ember" id="ringEmber"></div>
+      <div class="time-display">
+        <span id="timeLeft">25:00</span>
+        <span class="session-sub" id="cycleLabel">Trial 1 of 4</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="btnStart" class="btn btn-primary">Begin</button>
+      <button id="btnPause" class="btn" hidden>Hold</button>
+      <button id="btnReset" class="btn btn-ghost">Reset</button>
+      <button id="btnSkip" class="btn btn-ghost">Skip</button>
+    </div>
+
+    <p class="tally">Trials Endured: <span id="tallyCount">0</span></p>
+  </section>
+
+  <section class="presets-shrine">
+    <h2>Choose Your Rite</h2>
+    <div class="preset-grid" id="presetGrid"></div>
+
+    <div class="custom-panel" id="customPanel" hidden>
+      <div class="field-row">
+        <label>Work <span>min</span>
+          <input type="number" id="customWork" min="1" max="180" value="25" inputmode="numeric" />
+        </label>
+        <label>Short Rest <span>min</span>
+          <input type="number" id="customShort" min="1" max="60" value="5" inputmode="numeric" />
+        </label>
+      </div>
+      <div class="field-row">
+        <label>Long Rest <span>min</span>
+          <input type="number" id="customLong" min="1" max="90" value="15" inputmode="numeric" />
+        </label>
+        <label>Trials till Long Rest
+          <input type="number" id="customCycles" min="1" max="12" value="4" inputmode="numeric" />
+        </label>
+      </div>
+      <button id="customApply" class="btn btn-primary">Forge This Rite</button>
+    </div>
+  </section>
+
+  <section class="settings-shrine">
+    <label class="toggle-row">
+      <input type="checkbox" id="toggleSound" checked />
+      <span>Toll the bell</span>
+    </label>
+    <label class="toggle-row">
+      <input type="checkbox" id="toggleWakeLock" checked />
+      <span>Keep screen awake</span>
+    </label>
+    <button id="btnInstall" class="btn btn-ghost" hidden>Install to Home Screen</button>
+  </section>
+
+  <footer class="credits">
+    <p>Settings persist in this device's grimoire (local storage) only. No data leaves your hands.</p>
+  </footer>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
