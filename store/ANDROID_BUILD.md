@@ -35,7 +35,7 @@ answers (press Enter to accept a sensible default where one is offered):
 | Prompt | Answer |
 |---|---|
 | Domain | `grimdoro.com` (auto-filled) |
-| Application ID | `com.grimdoro.app` — **this is effectively permanent once you publish; change it now if you'd rather use something else** |
+| Application ID | `com.grimdoro.twa` (what was actually used) |
 | Application name | `Pomodoro of the Damned` |
 | Short/launcher name | `Pomodoro` |
 | Display mode | `standalone` |

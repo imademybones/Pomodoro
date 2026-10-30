@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.grimdoro.twa",
+      "sha256_cert_fingerprints": [
+        "A1:52:2B:E4:A5:4A:4D:6E:3F:41:1E:24:2E:D2:DE:44:D2:16:03:73:BD:CC:CE:2B:27:18:22:67:2F:8F:BE:B7"
+      ]
+    }
+  }
+]

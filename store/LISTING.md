@@ -5,7 +5,7 @@
 | Field | Value |
 |---|---|
 | App name | Pomodoro of the Damned |
-| Package name (applicationId) | `com.grimdoro.app` — **effectively permanent once published; change now if you want something else** |
+| Package name (applicationId) | `com.grimdoro.twa` |
 | Default language | English (United States) |
 | App or game | App |
 | Free or paid | Free |
