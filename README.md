@@ -2,7 +2,7 @@
 
 A grimdark, installable Pomodoro timer. No build step, no dependencies, no backend — pure HTML/CSS/JS, designed to be left open on your phone's screen while you work.
 
-**Live app:** https://imademybones.github.io/Pomodoro/
+**Live app:** https://grimdoro.com
 
 <img src="screenshots/app-screenshot.png" alt="Pomodoro of the Damned running in a browser, showing the ember progress ring and the preset rite cards" width="360" />
 
