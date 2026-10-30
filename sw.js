@@ -1,7 +1,8 @@
-const CACHE_NAME = "potd-cache-v2";
+const CACHE_NAME = "potd-cache-v3";
 const PRECACHE_URLS = [
   "./",
   "./index.html",
+  "./privacy.html",
   "./css/style.css",
   "./js/app.js",
   "./manifest.webmanifest",
