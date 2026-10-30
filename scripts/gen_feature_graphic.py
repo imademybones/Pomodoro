@@ -22,11 +22,11 @@ def main():
     draw = ImageDraw.Draw(img)
 
     cx, cy = 150, H / 2
-    half_w, half_h = 95, 115
+    half_w, half_h = 85, 100
     draw_hourglass(draw, cx, cy, half_w, half_h, BRONZE, (20, 14, 10), EMBER, 6)
     draw.ellipse([cx - 6, cy - 6, cx + 6, cy + 6], fill=EMBER_BRIGHT)
 
-    ring_r = 170
+    ring_r = 130
     draw.ellipse([cx - ring_r, cy - ring_r, cx + ring_r, cy + ring_r], outline=BRONZE_DIM, width=3)
 
     serif_bold = find_font([
